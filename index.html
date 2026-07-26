@@ -25,18 +25,48 @@
 
     <div class="divider"></div>
 
-    <h2>Launching Soon</h2>
+    <h2>COMING SOON</h2>
 
     <p>
         We are carefully curating a collection of premium perfumes.
         Stay tuned for something truly unforgettable.
     </p>
 
-    <a href="mailto:info@theessencestory.in" class="button">
+    <button class="button" onclick="toggleContact()">
         Contact Us
-    </a>
+    </button>
+
+    <div id="contactBox" class="contact-box">
+        <h3>Get in Touch</h3>
+
+        <p>
+            📞
+            <a href="tel:+917045284512">
+                +91 70452 84512
+            </a>
+        </p>
+
+        <p>
+            📷
+            <a href="https://www.instagram.com/ajay._1999?igsh=MXd6NGY5ODFpMGcwZQ==" target="_blank">
+                Instagram
+            </a>
+        </p>
+    </div>
 
 </div>
+
+<script>
+function toggleContact() {
+    const box = document.getElementById("contactBox");
+
+    if (box.style.display === "block") {
+        box.style.display = "none";
+    } else {
+        box.style.display = "block";
+    }
+}
+</script>
 
 </body>
 </html>
